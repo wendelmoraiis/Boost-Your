@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: Montserrat;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px 40px;
+    width: 100%;
+}
+
+.navigation .logo {
+    width: 60px;
+}
+
+.navigation .menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+}
+
+.navigation li a {
+    font-weight: 500;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    position: relative;
+}
+
+.navigation li a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #f3546f;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.navigation li a:hover::after{
+    width: 100%;
+}
+
+.navigation .about {
+    font-weight: 700;
+    color: #d76578;
+}
+
+.button {
+    font-family: Montserrat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    gap: 42px;
+}
+
+.button .sigin-up{
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 4px solid #9f9f9f;
+    color: #000;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+
+.button .sigin-up:hover {
+    background-color: #9f9f9f;
+}
+
+.button .login {
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+
+.button .login:hover {
+    background-color: #9f9f9f;
+}
+
+.container-principal {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.container-text {
+    max-width: 37rem;
+}
+
+.container .text-h1 {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.container  .text-h3 {
+    font-weight: 600;
+    font-size: 40px;
+}
+.container .text-h5 {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+
+.container-button {
+    padding: 15px 45px;
+    background: linear-gradient(93.11deg, #D15083 3.68%, #D9696B 52%, #E46A48 97.38%);
+    box-shadow: 0px 8px 18px rgba(215, 101, 120, 0.6);
+    width: 270px;
+    height: 70px;
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFBFB;
+    cursor: pointer;
+    transform: all 0.5s;
+}
+
+.container-button:hover {
+    background-color: #1d1c1c;
+}
+
+.container-img img {
+    width: 100%;
+}
